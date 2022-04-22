@@ -117,7 +117,7 @@ def consolidateVotingDemographicAndIndicatorData():
                         index_col = False,
                         encoding = 'utf-8',
                         lineterminator = '\n')
-    print(df_vote.columns)
+
     df_cult = pd.read_csv(DATA_PATH.joinpath('processed','culture.tsv.gz'),
                         compression = 'gzip',
                         sep = '\t',
